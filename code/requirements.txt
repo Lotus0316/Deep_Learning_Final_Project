@@ -1,0 +1,11 @@
+dgl==2.2.1
+torch==2.1.0
+cornac
+matplotlib
+numpy
+pandas
+seaborn
+scipy
+tqdm
+datasets
+contextily
