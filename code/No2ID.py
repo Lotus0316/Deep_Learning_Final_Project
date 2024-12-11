@@ -1,12 +1,12 @@
 #encoding=utf-8
 #用于将预测结果还原为字符串
 import pandas as pd
-df_u=pd.read_csv(r"用户名和用户编号.csv")
-df_shop=pd.read_csv(r"店铺名和店铺编号.csv")
+df_u=pd.read_csv("../cleaned_data/graph_data/user_id_and_no.csv")
+df_shop=pd.read_csv("../cleaned_data/graph_data/bs_id_and_no.csv")
 d={}
-for x,y in zip(df_u["用户名"],df_u["用户编号"]):
+for x,y in zip(df_u["user_id"],df_u["user_no"]):
     d[y]=x
-for x,y in zip(df_shop["店铺名"],df_shop["店铺编号"]):
+for x,y in zip(df_shop["bs_id"],df_shop["bs_no"]):
     d[y]=x
     
 
